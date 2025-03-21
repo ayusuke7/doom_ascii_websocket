@@ -2,7 +2,13 @@
 
 Este projeto roda o jogo DOOM em ASCII utilizando um servidor WebSocket para capturar a tela do jogo e um cliente WebSocket para exibir os frames em ASCII no terminal.
 
+### Web Client
+
 ![Sample Screenshot](screens/sample.gif)
+
+### Terminal
+
+![Sample Screenshot](screens/sample2.gif)
 
 ## Requisitos
 

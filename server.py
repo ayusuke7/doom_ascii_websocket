@@ -13,7 +13,7 @@ WIDTH = 80  # Largura do terminal
 def get_doom_window():
     """Obtém as coordenadas da janela do DOOM."""
     try:
-        output = os.popen("wmctrl -lG | grep -i 'DOOM'").read()
+        output = os.popen("wmctrl -lG | grep -i 'DOOM Shareware'").read()
         if output:
             parts = output.split()
             return {
