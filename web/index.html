@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ASCII Doom Client</title>
+    <style>
+      body {
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ASCII Doom Client</h1>
+    <div id="view"></div>
+
+    <script>
+      const socket = new WebSocket("ws://localhost:8765");
+
+      socket.onmessage = (event) => {
+        const consoleElement = document.getElementById("view");
+        consoleElement.innerText = event.data;
+      };
+
+      socket.onopen = () => {
+        console.log("Conectado ao servidor!");
+      };
+
+      socket.onerror = (error) => {
+        console.log("Erro ao conectar ao servidor:", error);
+      };
+
+      socket.onclose = () => {
+        console.log("Conexão fechada!");
+      };
+    </script>
+  </body>
+</html>
