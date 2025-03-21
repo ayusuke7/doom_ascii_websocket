@@ -2,6 +2,8 @@
 
 Este projeto roda o jogo DOOM em ASCII utilizando um servidor WebSocket para capturar a tela do jogo e um cliente WebSocket para exibir os frames em ASCII no terminal.
 
+![Sample Screenshot](screens/sample.gif)
+
 ## Requisitos
 
 - Python 3.7 ou superior
@@ -68,7 +70,7 @@ Este projeto roda o jogo DOOM em ASCII utilizando um servidor WebSocket para cap
 
 ## Observações
 
-- Certifique-se de que o DOOM (prboom) esteja instalado e configurado corretamente no seu sistema.
-- O script [server.py](http://_vscodecontentref_/4) utiliza o comando `wmctrl` para obter as coordenadas da janela do DOOM. Certifique-se de que o `wmctrl` esteja instalado e funcionando corretamente.
+- Certifique-se de que o DOOM esteja instalado e configurado e executando corretamente no seu sistema.
+- O script server.py utiliza o comando `wmctrl` para obter as coordenadas da janela do DOOM. Certifique-se de que o `wmctrl` esteja instalado e funcionando corretamente.
 
 Divirta-se jogando DOOM em ASCII no terminal!
